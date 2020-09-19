@@ -155,7 +155,7 @@ date createDate(){
     dt.day = inputDay();
     dt.month = inputMonth();
     dt.year = inputYear();
-    checkDate(dt) ? displayDate(dt) : count << "Invalid "
+    return dt;
 
 }
 
@@ -215,9 +215,16 @@ void inputStdAdress(Char x[]){
     cin >> x;
 }
 
+
+
 student createStudent(){
     student std;
-    std.
+    inputStdName(std.name);
+    inputStdSurname(std.surname);
+    inputStdAdress(std.address);
+    std.birthday = createDate();
+    std.course_mark = createCourse();
+
 }
 
 
