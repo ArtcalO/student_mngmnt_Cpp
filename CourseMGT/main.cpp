@@ -15,7 +15,16 @@ typedef struct date
     int day;
     int month;
     float year;
-}course;
+}date;
+
+typedef struct student
+{
+    char name[20];
+    char surname[20];
+    char adress[20];
+    date birthday;
+    course course_mark;
+}student;
 
 
 /*
@@ -111,6 +120,7 @@ void display_M_nb_Course(course cr[],int m)
 */
 
 
+
 int inputDay(){
     int x;
     do{
@@ -145,7 +155,7 @@ date createDate(){
     dt.day = inputDay();
     dt.month = inputMonth();
     dt.year = inputYear();
-    checkDate(dt) ? displayDate(dt) : "Invalid"
+    checkDate(dt) ? displayDate(dt) : count << "Invalid "
 
 }
 
