@@ -145,6 +145,12 @@ date createDate(){
     dt.day = inputDay();
     dt.month = inputMonth();
     dt.year = inputYear();
+    checkDate(dt) ? displayDate(dt) : "Invalid"
+
+}
+
+void displayDate(date dt){
+    return "Date: "<< dt.day <<"/"<< dt.month << "/" << dt.day 
 }
 
 bool isLeap(int year) 
@@ -183,6 +189,8 @@ bool checkDate(date dt){
 
     return true; 
 }
+
+
 
 int main()
 {
