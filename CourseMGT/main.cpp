@@ -16,7 +16,7 @@ typedef struct course
 */
 
 // ADDING COURSE FUNCTION
-int inputCourse()
+int inputCourseNumber()
 {
     int y;
     do{
@@ -60,6 +60,34 @@ float inputCourseMark()
     return x;
 }
 
+void afficherCour(cour x)
+{
+    cout<<"Cour Nom : "<<x.intitule<<" \n Credit : "<<x.credit<<" \n Note obtenu :"<<x.noteObt<<"\n";
+}
+
+// CREATE COURSE FUNCTION
+
+course createCourse()
+{
+    course cr;
+    inputCourseTitle(cr.title);
+    cr.credit = inputCourseCredit();
+    cr.mark = inputCourseMark();
+
+    return cr;
+}
+
+// CREATE M NUMBER OF COURSE BETWEEN 6-15
+
+void create_M_nb_Course(course cr[] ,int m)
+{
+    int i;
+    for(i = 0;i<m ;i++)
+        {
+            cout<<"Course number  "<<i+1<<"\n";
+            cr[i] = createCourse();
+        }
+}
 
 /*
 ##################################  STUDENTS MANAGEMENT FUNCTIONS #########################################################
