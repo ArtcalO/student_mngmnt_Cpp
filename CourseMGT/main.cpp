@@ -10,6 +10,13 @@ typedef struct course
     float mark;
 }course;
 
+typedef struct date
+{
+    int day;
+    int month;
+    float year;
+}course;
+
 
 /*
 ##################################  COURSE MANAGEMENT FUNCTIONS #########################################################
@@ -102,6 +109,8 @@ void display_M_nb_Course(course cr[],int m)
 /*
 ##################################  STUDENTS MANAGEMENT FUNCTIONS #########################################################
 */
+
+
 
 int main()
 {
