@@ -2,6 +2,19 @@
 
 using namespace std;
 
+
+typedef struct course
+{
+    char title[20];
+    int credit;
+    float mark;
+}course;
+
+
+/*
+##################################  COURSE MANAGEMENT FUNCTIONS #########################################################
+*/
+
 // ADDING COURSE FUNCTION
 int inputCourse()
 {
@@ -46,6 +59,11 @@ float inputCourseMark()
     }while(x< 0 || x >20);
     return x;
 }
+
+
+/*
+##################################  STUDENTS MANAGEMENT FUNCTIONS #########################################################
+*/
 
 int main()
 {
