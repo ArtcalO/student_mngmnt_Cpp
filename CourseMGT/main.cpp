@@ -200,6 +200,15 @@ bool checkDate(date dt){
     return true; 
 }
 
+void inputStdName(Char x[]){
+    cout << "Enter Student name : ";
+    cin >> x;
+}
+
+student createStudent(){
+    student std;
+    std.
+}
 
 
 int main()
