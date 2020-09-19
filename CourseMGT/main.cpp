@@ -33,6 +33,20 @@ int inputCourseCredit()
     }while(x < 2 || x >5);
 return x;
 }
+
+// ADDING COURSEMARK FUNCTION
+
+float inputCourseMark()
+{
+    float x;
+    do
+    {
+        cout<<"Enter course mark between 0 and 20 :";
+        cin>>x;
+    }while(x< 0 || x >20);
+    return x;
+}
+
 int main()
 {
     cout << "Hello world!" << endl;
