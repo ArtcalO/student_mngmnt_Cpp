@@ -111,13 +111,40 @@ void display_M_nb_Course(course cr[],int m)
 */
 
 int inputDay(){
-    int x
+    int x;
     do{
         cout << "Enter a day between 1 and 30 : ";
         cin >> x;
-    }while(x<1 || x>30)
+    }while(x<1 || x>30);
+
+    return x;
 }
 
+int inputMonth(){
+    int x;
+    do{
+        cout << "Enter a month between 1 and 12 :";
+        cin >> x;
+    }while(x < 1 || x > 12);
+
+    return x;
+}
+
+int inputYear(){
+    int x;
+    do{
+        cout << "Enter a valid year 1981-2020: ";
+        cin >> x;
+    }while(x <= 1980 || x > 2020);
+    return x;
+}
+
+date createDate(){
+    date dt;
+    dt.day = inputDay();
+    dt.month = inputMonth();
+    dt.year = inputYear();
+}
 
 int main()
 {
