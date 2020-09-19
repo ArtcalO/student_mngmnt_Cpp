@@ -60,9 +60,10 @@ float inputCourseMark()
     return x;
 }
 
-void afficherCour(cour x)
+// DISPLAY COURSE
+void displayCourse(cour x)
 {
-    cout<<"Cour Nom : "<<x.intitule<<" \n Credit : "<<x.credit<<" \n Note obtenu :"<<x.noteObt<<"\n";
+    cout<<"Course Title : "<<x.title<<" \n Credit : "<<x.credit<<" \n Mark obtained :"<<x.mark<<"\n";
 }
 
 // CREATE COURSE FUNCTION
@@ -87,6 +88,15 @@ void create_M_nb_Course(course cr[] ,int m)
             cout<<"Course number  "<<i+1<<"\n";
             cr[i] = createCourse();
         }
+}
+
+// DISPLAY M NUMBER OF COURSE
+
+void display_M_nb_Course(course cr[],int m)
+{
+    int i;
+    for(i = 0;i<m ;i++)
+         dis(cr[i]);
 }
 
 /*
