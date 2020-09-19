@@ -96,7 +96,7 @@ void display_M_nb_Course(course cr[],int m)
 {
     int i;
     for(i = 0;i<m ;i++)
-         dis(cr[i]);
+         displayCourse(cr[i]);
 }
 
 /*
