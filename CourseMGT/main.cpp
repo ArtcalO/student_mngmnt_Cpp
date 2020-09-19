@@ -158,7 +158,15 @@ return (((year % 4 == 0) &&
 }
 
 bool checkDate(date dt){
-    
+    // Handle February month 
+    // with leap year 
+    if (dt.month == 2) 
+    { 
+        if (isLeap(dt.year)) 
+        return (dt.day <= 29); 
+        else
+        return (dt.day <= 28); 
+    } 
 }
 
 int main()
