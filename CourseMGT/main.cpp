@@ -205,6 +205,11 @@ void inputStdName(Char x[]){
     cin >> x;
 }
 
+void inputStdSurname(Char x[]){
+    cout << "Enter Student surname : ";
+    cin >> x;
+}
+
 student createStudent(){
     student std;
     std.
