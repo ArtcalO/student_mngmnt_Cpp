@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int integer_between_6_15()
+// ADDING COURSE FUNCTION
+int inputCourse()
 {
     int y;
     do{
@@ -11,6 +12,15 @@ int integer_between_6_15()
     }while(y<6 || y>15);
     return y;
 }
+
+// ADDING COURSE TITLE FUNCTION
+
+void inputCourseTitle(char x [])
+{
+    cout<<"entrez nom du cour :";
+    cin>>x;
+}
+
 int main()
 {
     cout << "Hello world!" << endl;
