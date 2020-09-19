@@ -110,12 +110,13 @@ void display_M_nb_Course(course cr[],int m)
 ##################################  STUDENTS MANAGEMENT FUNCTIONS #########################################################
 */
 
+
 int inputDay(){
     int x;
     do{
         cout << "Enter a day between 1 and 30 : ";
         cin >> x;
-    }while(x<1 || x>30);
+    }while(x<1 || x > 31);
 
     return x;
 }
@@ -158,8 +159,10 @@ return (((year % 4 == 0) &&
 }
 
 bool checkDate(date dt){
+
     // Handle February month 
     // with leap year 
+
     if (dt.month == 2) 
     { 
         if (isLeap(dt.year)) 
@@ -167,6 +170,18 @@ bool checkDate(date dt){
         else
         return (dt.day <= 28); 
     } 
+
+
+     // Months of April, June, 
+    // Sept and Nov must have 
+    // number of days less than 
+    // or equal to 30. 
+
+    if (dt.month == 4 || dt.month == 6 || 
+        dt.month == 9 || dt.month == 11) 
+        return (dt.day <= 30); 
+
+    return true; 
 }
 
 int main()
