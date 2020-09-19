@@ -160,7 +160,7 @@ date createDate(){
 }
 
 void displayDate(date dt){
-    return "Date: "<< dt.day <<"/"<< dt.month << "/" << dt.day 
+    cout << "Date: "<< dt.day <<"/"<< dt.month << "/" << dt.day 
 }
 
 bool isLeap(int year) 
@@ -223,8 +223,14 @@ student createStudent(){
     inputStdSurname(std.surname);
     inputStdAdress(std.address);
     std.birthday = createDate();
-    std.course_mark = createCourse();
 
+}
+
+void displayStudent(student std){
+     cout << "Name : "<< std.name <<
+     "\nSurrname : " << std.surname <<
+     "\nAdress : " << std.address <<
+     "\nBirthday : "<< displayDate(std.birthday)
 }
 
 
