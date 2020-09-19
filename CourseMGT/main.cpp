@@ -110,6 +110,13 @@ void display_M_nb_Course(course cr[],int m)
 ##################################  STUDENTS MANAGEMENT FUNCTIONS #########################################################
 */
 
+int inputDay(){
+    int x
+    do{
+        cout << "Enter a day between 1 and 30 : ";
+        cin >> x;
+    }while(x<1 || x>30)
+}
 
 
 int main()
