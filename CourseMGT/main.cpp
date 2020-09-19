@@ -146,6 +146,21 @@ date createDate(){
     dt.year = inputYear();
 }
 
+bool isLeap(int year) 
+{ 
+// Return true if year 
+// is a multiple pf 4 and 
+// not multiple of 100. 
+// OR year is multiple of 400. 
+return (((year % 4 == 0) && 
+        (year % 100 != 0)) || 
+        (year % 400 == 0)); 
+}
+
+bool checkDate(date dt){
+    
+}
+
 int main()
 {
     cout << "Hello world!" << endl;
