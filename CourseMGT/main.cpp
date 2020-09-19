@@ -17,10 +17,22 @@ int inputCourse()
 
 void inputCourseTitle(char x [])
 {
-    cout<<"entrez nom du cour :";
+    cout<<"Put course title :";
     cin>>x;
 }
 
+// ADDING COURSECREDIT FUNCTIOIN
+
+int inputCourseCredit()
+{
+    int x;
+    do
+    {
+        cout<<"Enter course credit between 2 and 5 :";
+        cin>>x;
+    }while(x < 2 || x >5);
+return x;
+}
 int main()
 {
     cout << "Hello world!" << endl;
